@@ -4,7 +4,7 @@ public class Adapter extends Batallon{
 
 	public Adapter(CheemsSoldado cheems){
 		this.cheems = cheems;
-		this.nameID = "Cheems";
+		this.nameID = "Cheems" + mostrar.getReliquias();
 		this.ataque = (int) cheems.getAtaqueMagico();
 		this.velocidad = (int) cheems.getMovimientoMagico();
 		this.defensa = (int) cheems.getDefensaMagica();
@@ -21,7 +21,7 @@ public class Adapter extends Batallon{
 
 	@Override
 	public void printForCreateSoldier(Batallon cheems){
-        System.out.println("\n\t\tDescripción:" + this.nameID +
+        System.out.println("\n\t\tDescripción:" + cheems.getDescripcion() +
                 "\n\t\tAtaque: " + cheems.getAtaque() + "." +
                 "\n\t\tVelocidad: " + cheems.getVelocidad() + "." +
                 "\n\t\tDefensa: " + cheems.getDefensa() + "." +
