@@ -9,6 +9,9 @@ public class Adapter extends Batallon{
 		this.velocidad = (int) cheems.getMovimientoMagico();
 		this.defensa = (int) cheems.getDefensaMagica();
 		this.armas = cheems.mostrarReliquias();
+		this.formacionCombate = "Soldado raso";
+		this.tab = "\t\t\t";
+		this.color = "\u001B[34m";
 	}
 
 	@Override
