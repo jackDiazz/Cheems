@@ -1,9 +1,5 @@
 public class PistolaDePapas extends ArmamentoDecorator {
 
-	public PistolaDePapas(){
-		this.soldadoDecorado = new Soldado(); 
-	}
-
     public PistolaDePapas(Batallon soldadoDecorado) {
         this.soldadoDecorado = soldadoDecorado;
     }
@@ -53,7 +49,7 @@ public class PistolaDePapas extends ArmamentoDecorator {
     }
 
     @Override
-    public void printForCreateSoldier(Batallon soldado) {        
+    public void printForCreateSoldier(Batallon soldado) {
         soldadoDecorado.printForCreateSoldier(soldado);
 
     }

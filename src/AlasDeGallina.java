@@ -1,8 +1,4 @@
 public class AlasDeGallina extends ArmamentoDecorator {
-	
-	public AlasDeGallina(){
-		this.soldadoDecorado = new Soldado(); 
-	}
 
     public AlasDeGallina(Batallon soldadoDecorado) {
         this.soldadoDecorado = soldadoDecorado;
@@ -52,7 +48,7 @@ public class AlasDeGallina extends ArmamentoDecorator {
         soldadoDecorado.print(soldado);
     }
     @Override
-    public void printForCreateSoldier(Batallon soldado) {        
+    public void printForCreateSoldier(Batallon soldado) {
         soldadoDecorado.printForCreateSoldier(soldado);
 
     }

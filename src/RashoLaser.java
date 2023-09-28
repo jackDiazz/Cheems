@@ -1,9 +1,5 @@
 public class RashoLaser extends ArmamentoDecorator {
 
-	public RashoLaser(){
-		this.soldadoDecorado = new Soldado(); 
-	}
-
     public RashoLaser(Batallon soldadoDecorado){
         this.soldadoDecorado=soldadoDecorado;
     }
@@ -31,7 +27,7 @@ public class RashoLaser extends ArmamentoDecorator {
     public void print(Batallon soldado){
         soldadoDecorado.print(soldado);
     }
-    @Override 
+    @Override
     public String getNameID(){
         return soldadoDecorado.getNameID();
     }
@@ -40,7 +36,7 @@ public class RashoLaser extends ArmamentoDecorator {
         return soldadoDecorado.getFormacion();
     }
     @Override
-    public void printForCreateSoldier(Batallon soldado) {        
+    public void printForCreateSoldier(Batallon soldado) {
         soldadoDecorado.printForCreateSoldier(soldado);
 
     }

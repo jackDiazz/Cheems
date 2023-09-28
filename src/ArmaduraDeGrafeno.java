@@ -1,8 +1,4 @@
 public class ArmaduraDeGrafeno extends ArmamentoDecorator {
-	
-	public ArmaduraDeGrafeno(){
-		this.soldadoDecorado = new Soldado();
-	}
 
     public ArmaduraDeGrafeno(Batallon soldadoDecorado) {
         this.soldadoDecorado = soldadoDecorado;
@@ -52,7 +48,7 @@ public class ArmaduraDeGrafeno extends ArmamentoDecorator {
         return soldadoDecorado.getNameID();
     }
     @Override
-    public void printForCreateSoldier(Batallon soldado) {        
+    public void printForCreateSoldier(Batallon soldado) {
         soldadoDecorado.printForCreateSoldier(soldado);
 
     }

@@ -1,9 +1,5 @@
 public class ArmaduraDeKevlar extends ArmamentoDecorator {
 
-	public ArmaduraDeKevlar(){
-		this.soldadoDecorado = new Soldado(); 
-	}
-
     public ArmaduraDeKevlar(Batallon soldadoDecorado) {
         this.soldadoDecorado = soldadoDecorado;
     }
@@ -52,7 +48,7 @@ public class ArmaduraDeKevlar extends ArmamentoDecorator {
         soldadoDecorado.print(soldado);
     }
     @Override
-    public void printForCreateSoldier(Batallon soldado) {        
+    public void printForCreateSoldier(Batallon soldado) {
         soldadoDecorado.printForCreateSoldier(soldado);
 
     }

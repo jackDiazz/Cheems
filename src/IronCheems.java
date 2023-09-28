@@ -1,9 +1,5 @@
 public class IronCheems extends ArmamentoDecorator {
 
-	public IronCheems(){
-		this.soldadoDecorado = new Soldado(); 
-	}
-    
     public IronCheems(Batallon soldadoDecorado){
         this.soldadoDecorado=soldadoDecorado;
     }
@@ -35,12 +31,12 @@ public class IronCheems extends ArmamentoDecorator {
     public void print(Batallon soldado){
         soldadoDecorado.print(soldado);
     }
-    @Override 
+    @Override
     public String getNameID(){
         return soldadoDecorado.getNameID();
     }
     @Override
-    public void printForCreateSoldier(Batallon soldado) {        
+    public void printForCreateSoldier(Batallon soldado) {
         soldadoDecorado.printForCreateSoldier(soldado);
 
     }

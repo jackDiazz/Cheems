@@ -1,9 +1,4 @@
 public class EspadaGiganteAnime extends ArmamentoDecorator {
-	
-	public EspadaGiganteAnime(){
-		this.soldadoDecorado = new Soldado(); 
-	}
-
     public EspadaGiganteAnime(Batallon soldadoDecorado) {
         this.soldadoDecorado = soldadoDecorado;
     }
@@ -51,7 +46,7 @@ public class EspadaGiganteAnime extends ArmamentoDecorator {
         soldadoDecorado.print(soldado);
     }
     @Override
-    public void printForCreateSoldier(Batallon soldado) {        
+    public void printForCreateSoldier(Batallon soldado) {
         soldadoDecorado.printForCreateSoldier(soldado);
 
     }

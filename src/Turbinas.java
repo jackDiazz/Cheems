@@ -1,9 +1,5 @@
 public class Turbinas extends ArmamentoDecorator {
 
-	public Turbinas(){
-		this.soldadoDecorado = new Soldado(); 
-	}
-
     public Turbinas(Batallon soldadoDecorado) {
         this.soldadoDecorado = soldadoDecorado;
     }
@@ -53,7 +49,7 @@ public class Turbinas extends ArmamentoDecorator {
     }
 
     @Override
-    public void printForCreateSoldier(Batallon soldado) {        
+    public void printForCreateSoldier(Batallon soldado) {
         soldadoDecorado.printForCreateSoldier(soldado);
 
     }

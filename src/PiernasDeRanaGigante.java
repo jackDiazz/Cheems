@@ -1,9 +1,5 @@
 public class PiernasDeRanaGigante extends ArmamentoDecorator {
 
-	public PiernasDeRanaGigante(){
-		this.soldadoDecorado = new Soldado(); 
-	}
-
     public PiernasDeRanaGigante(Batallon soldadoDecorado) {
         this.soldadoDecorado = soldadoDecorado;
     }
@@ -31,7 +27,7 @@ public class PiernasDeRanaGigante extends ArmamentoDecorator {
     public int getVelocidad() {
         return soldadoDecorado.getVelocidad() + 3;
     }
-    
+
     @Override
     public void setFormacionCombate(String formacionCombate) {
         soldadoDecorado.setFormacionCombate(formacionCombate);
@@ -53,7 +49,7 @@ public class PiernasDeRanaGigante extends ArmamentoDecorator {
     }
 
     @Override
-    public void printForCreateSoldier(Batallon soldado) {        
+    public void printForCreateSoldier(Batallon soldado) {
         soldadoDecorado.printForCreateSoldier(soldado);
 
     }
